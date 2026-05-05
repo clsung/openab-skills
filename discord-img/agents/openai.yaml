@@ -1,0 +1,6 @@
+interface:
+  display_name: "Discord Img"
+  short_description: "Generate images and send them to Discord"
+  default_prompt: "Use $discord-img to generate an image and send it back to this Discord thread."
+policy:
+  allow_implicit_invocation: true
