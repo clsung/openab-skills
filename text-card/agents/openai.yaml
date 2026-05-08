@@ -1,0 +1,3 @@
+display_name: Text Card
+short_description: Turn plain text into a readable infographic card.
+default_prompt: "把以下文字轉成一張重點清楚的圖卡："
