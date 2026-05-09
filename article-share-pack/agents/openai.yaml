@@ -1,0 +1,4 @@
+interface:
+  display_name: "Article Share Pack"
+  short_description: "Turn articles into Chinese share packs."
+  default_prompt: "Use $article-share-pack to turn this article into a Chinese summary, key bullets, and a mobile vertical card."

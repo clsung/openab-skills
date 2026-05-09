@@ -6,6 +6,7 @@ Reusable Codex skills for OpenAB and Discord workflows.
 
 - `discord-img`: generate raster images with Codex image generation and upload them back to the current Discord/OpenAB channel or thread.
 - `text-card`: turn plain text, notes, transcripts, URLs, or articles into a readable infographic card.
+- `article-share-pack`: turn articles, reports, webpages, or podcast pages into a Traditional Chinese summary, key bullets, takeaway, and mobile vertical card for sharing.
 
 ## Install
 
@@ -17,6 +18,8 @@ cp -R discord-img "${CODEX_HOME:-$HOME/.codex}/skills/discord-img"
 chmod +x "${CODEX_HOME:-$HOME/.codex}/skills/discord-img/scripts/"*.sh
 cp -R text-card "${CODEX_HOME:-$HOME/.codex}/skills/text-card"
 chmod +x "${CODEX_HOME:-$HOME/.codex}/skills/text-card/scripts/"*.sh
+cp -R article-share-pack "${CODEX_HOME:-$HOME/.codex}/skills/article-share-pack"
+chmod +x "${CODEX_HOME:-$HOME/.codex}/skills/article-share-pack/scripts/"*.sh
 ```
 
 For Discord uploads, configure a bot token in the runtime environment:
