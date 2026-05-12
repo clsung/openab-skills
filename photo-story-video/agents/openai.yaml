@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Story Video"
+  short_description: "Generate photo videos, then add text"
+  default_prompt: "Use $photo-story-video to generate a reusable no-text video from these photos, then add editable captions."
