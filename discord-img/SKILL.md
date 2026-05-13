@@ -12,7 +12,7 @@ Generate an image with Codex imagegen, keep the generated size as-is, verify bas
 1. Generate the image.
    - Use `scripts/generate-codex-image.sh` before considering any fallback.
    - The helper calls `codex exec --enable image_generation`, waits for a new file under `$CODEX_HOME/generated_images` or `$HOME/.codex/generated_images`, and copies it to the requested workspace path.
-   - It has timeout/retry controls: `IMGGEN_TIMEOUT_SEC` defaults to `150`; `IMGGEN_RETRIES` defaults to `2`.
+   - It has timeout/retry controls: `IMGGEN_TIMEOUT_SEC` defaults to `300`; `IMGGEN_RETRIES` defaults to `2`.
    - Do not require an `imagegen` or `image_gen` shell command. Missing `.codex/skills/.system/imagegen/SKILL.md` does not mean imagegen is unavailable.
    - If the helper fails after retries, report that imagegen failed before using any fallback.
    - Avoid direct imitation of living artists or specific studios; rephrase style requests into broader visual traits.
