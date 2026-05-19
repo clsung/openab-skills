@@ -1,0 +1,7 @@
+interface:
+  display_name: "Obsidian Vault"
+  short_description: "Maintain shared Obsidian Markdown knowledge vaults"
+  default_prompt: "Use $obsidian-vault to add this source to the shared Obsidian vault with tags, links, and a safe filename."
+
+policy:
+  allow_implicit_invocation: true
