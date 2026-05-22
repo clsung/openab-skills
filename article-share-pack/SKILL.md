@@ -44,10 +44,12 @@ If the user only asks for a plain image card from text, use `text-card` instead.
    - Use 9:16 only when the user asks for story/reel/shorts format.
    - Use 16:9 only when the user asks for slides, desktop presentation, or wide card.
    - Prefer `scripts/make-mobile-card.sh` for the default 4:5 card.
+   - For Traditional Chinese card text, use a font with complete CJK glyph support, such as Noto Sans CJK TC or an equivalent Traditional Chinese font.
 
 5. Verify the image.
    - Check PNG header, dimensions, and byte size.
    - Visually inspect when possible. If text is too dense or illegible, regenerate with fewer words.
+   - For Chinese cards, explicitly check for missing-glyph boxes/tofu. PNG headers and dimensions are not enough; if any Chinese text renders as boxes, regenerate or switch to a deterministic renderer with an explicit CJK font/fontconfig setup.
 
 6. Publish in Discord/OpenAB when context exists.
    - If `sender_context.thread_id` exists, upload to the thread; otherwise use `channel_id`.
