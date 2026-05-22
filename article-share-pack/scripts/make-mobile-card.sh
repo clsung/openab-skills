@@ -46,6 +46,7 @@ console.log(`Create a polished mobile-first vertical infographic card from the c
 Use Traditional Chinese for all visible text.
 Aspect ratio 4:5 vertical, approximately 1080x1350 raster image.
 Professional editorial social card for mobile sharing, high contrast, crisp large typography, spacious layout, no watermark, no logo.
+Use a font with complete Traditional Chinese glyph coverage, such as Noto Sans CJK TC or an equivalent CJK font. Do not render missing-glyph boxes/tofu.
 Make the exact visible text short and readable on a phone:
 - one large headline
 - one short subtitle
